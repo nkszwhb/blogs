@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>映射类型（Mapped Types） | 你看这世界并不坏</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blogs/favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.edffdf6f.css" as="style"><link rel="preload" href="/blogs/assets/js/app.f2c2bc0c.js" as="script"><link rel="preload" href="/blogs/assets/js/3.7a232b2a.js" as="script"><link rel="preload" href="/blogs/assets/js/1.4361ab0f.js" as="script"><link rel="preload" href="/blogs/assets/js/29.1749ef5a.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.214864ac.js"><link rel="prefetch" href="/blogs/assets/js/11.21e8ad93.js"><link rel="prefetch" href="/blogs/assets/js/12.02805be4.js"><link rel="prefetch" href="/blogs/assets/js/13.3b10b35e.js"><link rel="prefetch" href="/blogs/assets/js/14.00247b0b.js"><link rel="prefetch" href="/blogs/assets/js/15.46a6a271.js"><link rel="prefetch" href="/blogs/assets/js/16.0465fbb3.js"><link rel="prefetch" href="/blogs/assets/js/17.7964f6cf.js"><link rel="prefetch" href="/blogs/assets/js/18.628805fe.js"><link rel="prefetch" href="/blogs/assets/js/19.18c8bf67.js"><link rel="prefetch" href="/blogs/assets/js/20.f68f0e88.js"><link rel="prefetch" href="/blogs/assets/js/21.39961f72.js"><link rel="prefetch" href="/blogs/assets/js/22.e7bfc91f.js"><link rel="prefetch" href="/blogs/assets/js/23.e98b1006.js"><link rel="prefetch" href="/blogs/assets/js/24.8c380d97.js"><link rel="prefetch" href="/blogs/assets/js/25.40eb2416.js"><link rel="prefetch" href="/blogs/assets/js/26.d6ed2517.js"><link rel="prefetch" href="/blogs/assets/js/27.82b254b7.js"><link rel="prefetch" href="/blogs/assets/js/28.92778866.js"><link rel="prefetch" href="/blogs/assets/js/30.9c72ae73.js"><link rel="prefetch" href="/blogs/assets/js/31.06691f4a.js"><link rel="prefetch" href="/blogs/assets/js/32.f97565c4.js"><link rel="prefetch" href="/blogs/assets/js/33.55a8344f.js"><link rel="prefetch" href="/blogs/assets/js/34.56bf350f.js"><link rel="prefetch" href="/blogs/assets/js/35.d8aeeb71.js"><link rel="prefetch" href="/blogs/assets/js/36.883e4d04.js"><link rel="prefetch" href="/blogs/assets/js/37.2acf5ff0.js"><link rel="prefetch" href="/blogs/assets/js/38.cf5b486b.js"><link rel="prefetch" href="/blogs/assets/js/39.06819b54.js"><link rel="prefetch" href="/blogs/assets/js/4.e464a6e5.js"><link rel="prefetch" href="/blogs/assets/js/40.f28c50c4.js"><link rel="prefetch" href="/blogs/assets/js/41.34cd84fc.js"><link rel="prefetch" href="/blogs/assets/js/42.299e500a.js"><link rel="prefetch" href="/blogs/assets/js/43.c3267a74.js"><link rel="prefetch" href="/blogs/assets/js/44.ee90ab7a.js"><link rel="prefetch" href="/blogs/assets/js/45.e0d59f6c.js"><link rel="prefetch" href="/blogs/assets/js/46.442ab279.js"><link rel="prefetch" href="/blogs/assets/js/47.a8407f55.js"><link rel="prefetch" href="/blogs/assets/js/48.62636451.js"><link rel="prefetch" href="/blogs/assets/js/49.ee106e58.js"><link rel="prefetch" href="/blogs/assets/js/5.79b66293.js"><link rel="prefetch" href="/blogs/assets/js/50.a2eca1d6.js"><link rel="prefetch" href="/blogs/assets/js/51.bba42713.js"><link rel="prefetch" href="/blogs/assets/js/52.2d24cf56.js"><link rel="prefetch" href="/blogs/assets/js/53.57347df1.js"><link rel="prefetch" href="/blogs/assets/js/54.b17e5cba.js"><link rel="prefetch" href="/blogs/assets/js/55.f005ab67.js"><link rel="prefetch" href="/blogs/assets/js/6.a8b26883.js"><link rel="prefetch" href="/blogs/assets/js/7.6fe215b7.js"><link rel="prefetch" href="/blogs/assets/js/8.06da000b.js"><link rel="prefetch" href="/blogs/assets/js/9.41f7b111.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.edffdf6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>你看这世界并不坏</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc></p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>hide on heart</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/logo.png" alt="你看这世界并不坏" class="logo"> <span class="site-name">你看这世界并不坏</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/blogs/blogs/SourceLink/" class="nav-link"><i class="undefined"></i>
+  链接
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/CodeFormatter/" class="nav-link"><i class="undefined"></i>
+  CodeFormatter
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Eslint/" class="nav-link"><i class="undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/RegExp/" class="nav-link"><i class="undefined"></i>
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/正则表达式/" class="nav-link"><i class="undefined"></i>
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/资源链接/" class="nav-link"><i class="undefined"></i>
+  资源链接
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/文档/" class="nav-link"><i class="undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/文章链接/" class="nav-link"><i class="undefined"></i>
+  文章链接
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Semantic Versioning/" class="nav-link"><i class="undefined"></i>
+  Semantic Versioning
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/NPM/" class="nav-link"><i class="undefined"></i>
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/NodeJS/" class="nav-link"><i class="undefined"></i>
+  NodeJS
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/blogs/project/" class="nav-link"><i class="undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/CodeFormatter/" class="nav-link"><i class="undefined"></i>
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/TypeScript/" class="nav-link router-link-active"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="https://github.com/nkszwhb" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/blogs/logo.png" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    hide on heart
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>45</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>2</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/blogs/blogs/SourceLink/" class="nav-link"><i class="undefined"></i>
+  链接
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/js/" class="nav-link"><i class="undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/CodeFormatter/" class="nav-link"><i class="undefined"></i>
+  CodeFormatter
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Eslint/" class="nav-link"><i class="undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/RegExp/" class="nav-link"><i class="undefined"></i>
+  RegExp
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/正则表达式/" class="nav-link"><i class="undefined"></i>
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/资源链接/" class="nav-link"><i class="undefined"></i>
+  资源链接
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/文档/" class="nav-link"><i class="undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/TypeScript/" class="nav-link"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/文章链接/" class="nav-link"><i class="undefined"></i>
+  文章链接
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/Semantic Versioning/" class="nav-link"><i class="undefined"></i>
+  Semantic Versioning
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/NPM/" class="nav-link"><i class="undefined"></i>
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/NodeJS/" class="nav-link"><i class="undefined"></i>
+  NodeJS
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/blogs/project/" class="nav-link"><i class="undefined"></i>
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/CodeFormatter/" class="nav-link"><i class="undefined"></i>
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/TypeScript/" class="nav-link router-link-active"><i class="undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/blogs/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><a href="https://github.com/nkszwhb" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/blogs/blogs/TypeScript/basic/TheBasics" class="sidebar-heading clickable open"><span>基础</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/blogs/TypeScript/basic/TheBasics.html" class="sidebar-link">基础</a></li><li><a href="/blogs/blogs/TypeScript/basic/EverydayType.html" class="sidebar-link">常见类型</a></li><li><a href="/blogs/blogs/TypeScript/basic/Narrowing.html" class="sidebar-link">类型收窄</a></li><li><a href="/blogs/blogs/TypeScript/basic/MoreOnFunctions.html" class="sidebar-link">函数</a></li><li><a href="/blogs/blogs/TypeScript/basic/ObjectTypes.html" class="sidebar-link">对象类型</a></li><li><a href="/blogs/blogs/TypeScript/basic/Generics.html" class="sidebar-link">范型</a></li><li><a href="/blogs/blogs/TypeScript/basic/KeyofTypeOperator.html" class="sidebar-link">keyof 操作符</a></li><li><a href="/blogs/blogs/TypeScript/basic/TypeofTypeOperator.html" class="sidebar-link">typeof 操作符</a></li><li><a href="/blogs/blogs/TypeScript/basic/IndexedAccessTypes.html" class="sidebar-link">索引访问类型</a></li><li><a href="/blogs/blogs/TypeScript/basic/ConditionalTypes.html" class="sidebar-link">条件类型</a></li><li><a href="/blogs/blogs/TypeScript/basic/MappedTypes.html" aria-current="page" class="active sidebar-link">映射类型</a></li><li><a href="/blogs/blogs/TypeScript/basic/TemplateLiteralTypes.html" class="sidebar-link">模板字符串变量</a></li><li><a href="/blogs/blogs/TypeScript/basic/Class.html" class="sidebar-link">类</a></li><li><a href="/blogs/blogs/TypeScript/basic/Modules.html" class="sidebar-link">模块</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/blogs/blogs/TypeScript/reference/UtilityTypes" class="sidebar-heading clickable"><span>扩展</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>映射类型（Mapped Types）</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>hide on heart</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">映射类型（Mapped Types）</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>hide on heart</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>10/2/2021</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h2 id="映射类型-mapped-types"><a href="#映射类型-mapped-types" class="header-anchor">#</a> 映射类型（Mapped Types）</h2> <p>有的时候，一个类型需要基于另外一个类型，但是你又不想拷贝一份，这个时候可以考虑使用映射类型。</p> <p>映射类型建立在索引签名的语法上，我们先回顾下索引签名：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// 当你需要提前声明属性的类型时</span>
+<span class="token keyword">type</span> <span class="token class-name">OnlyBoolsAndHorses</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token operator">|</span> Horse<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">const</span> conforms<span class="token operator">:</span> OnlyBoolsAndHorses <span class="token operator">=</span> <span class="token punctuation">{</span>
+  del<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  rodney<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>而映射类型，就是使用了 <code>PropertyKeys</code> 联合类型的泛型，其中 <code>PropertyKeys</code> 多是通过 <code>keyof</code> 创建，然后循环遍历键名创建一个类型：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">OptionsFlags<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type<span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">boolean</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>在这个例子中，<code>OptionsFlags</code> 会遍历 <code>Type</code> 所有的属性，然后设置为布尔类型。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">FeatureFlags</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">darkMode</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+  <span class="token function-variable function">newUserProfile</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">FeatureOptions</span> <span class="token operator">=</span> OptionsFlags<span class="token operator">&lt;</span>FeatureFlags<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token comment">// type FeatureOptions = {</span>
+<span class="token comment">//    darkMode: boolean;</span>
+<span class="token comment">//    newUserProfile: boolean;</span>
+<span class="token comment">// }</span>
+</code></pre></div><h2 id="映射修饰符-mapping-modifiers"><a href="#映射修饰符-mapping-modifiers" class="header-anchor">#</a> 映射修饰符（Mapping Modifiers）</h2> <p>在使用映射类型时，有两个额外的修饰符可能会用到，一个是 <code>readonly</code>，用于设置属性只读，一个是 <code>?</code> ，用于设置属性可选。</p> <p>你可以通过前缀 <code>-</code> 或者 <code>+</code> 删除或者添加这些修饰符，如果没有写前缀，相当于使用了 <code>+</code> 前缀。</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// 删除属性中的只读属性</span>
+<span class="token keyword">type</span> <span class="token class-name">CreateMutable<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">-</span><span class="token keyword">readonly</span> <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type<span class="token punctuation">]</span><span class="token operator">:</span> Type<span class="token punctuation">[</span>Property<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">LockedAccount</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">readonly</span> id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  <span class="token keyword">readonly</span> name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">UnlockedAccount</span> <span class="token operator">=</span> CreateMutable<span class="token operator">&lt;</span>LockedAccount<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// type UnlockedAccount = {</span>
+<span class="token comment">//    id: string;</span>
+<span class="token comment">//    name: string;</span>
+<span class="token comment">// }</span>
+<span class="token comment">// 删除属性中的可选属性</span>
+<span class="token keyword">type</span> <span class="token class-name">Concrete<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type<span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">?</span><span class="token operator">:</span> Type<span class="token punctuation">[</span>Property<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">MaybeUser</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  name<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+  age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">User</span> <span class="token operator">=</span> Concrete<span class="token operator">&lt;</span>MaybeUser<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token comment">// type User = {</span>
+<span class="token comment">//    id: string;</span>
+<span class="token comment">//    name: string;</span>
+<span class="token comment">//    age: number;</span>
+<span class="token comment">// }</span>
+</code></pre></div><h2 id="通过-as-实现键名重新映射-key-remapping-via-as"><a href="#通过-as-实现键名重新映射-key-remapping-via-as" class="header-anchor">#</a> 通过 <code>as</code> 实现键名重新映射（Key Remapping via <code>as</code>）</h2> <p>在 TypeScript 4.1 及以后，你可以在映射类型中使用 <code>as</code> 语句实现键名重新映射：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">MappedTypeWithNewProperties<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>Properties <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type <span class="token keyword">as</span> NewKeyType<span class="token punctuation">]</span><span class="token operator">:</span> Type<span class="token punctuation">[</span>Properties<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>举个例子，你可以利用「<a href="https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html" target="_blank" rel="noopener noreferrer">模板字面量类型 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>」，基于之前的属性名创建一个新属性名：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">Getters<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type <span class="token keyword">as</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">get</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Capitalize<span class="token operator">&lt;</span><span class="token builtin">string</span> <span class="token operator">&amp;</span> Property<span class="token operator">&gt;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> Type<span class="token punctuation">[</span>Property<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">interface</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+    age<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+    location<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">LazyPerson</span> <span class="token operator">=</span> Getters<span class="token operator">&lt;</span>Person<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// type LazyPerson = {</span>
+<span class="token comment">//    getName: () =&gt; string;</span>
+<span class="token comment">//    getAge: () =&gt; number;</span>
+<span class="token comment">//    getLocation: () =&gt; string;</span>
+<span class="token comment">// }</span>
+</code></pre></div><p>你也可以利用条件类型返回一个 <code>never</code> 从而过滤掉某些属性:</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// Remove the 'kind' property</span>
+<span class="token keyword">type</span> <span class="token class-name">RemoveKindField<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type <span class="token keyword">as</span> Exclude<span class="token operator">&lt;</span>Property<span class="token punctuation">,</span> <span class="token string">&quot;kind&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">]</span><span class="token operator">:</span> Type<span class="token punctuation">[</span>Property<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">interface</span> <span class="token class-name">Circle</span> <span class="token punctuation">{</span>
+    kind<span class="token operator">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">;</span>
+    radius<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">KindlessCircle</span> <span class="token operator">=</span> RemoveKindField<span class="token operator">&lt;</span>Circle<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// type KindlessCircle = {</span>
+<span class="token comment">//    radius: number;</span>
+<span class="token comment">// }</span>
+</code></pre></div><p>你还可以遍历任何联合类型，不仅仅是 <code>string | number | symbol</code> 这种联合类型，可以是任何类型的联合：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">EventConfig<span class="token operator">&lt;</span>Events <span class="token keyword">extends</span> <span class="token punctuation">{</span> kind<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">E</span> <span class="token keyword">in</span> Events <span class="token keyword">as</span> <span class="token constant">E</span><span class="token punctuation">[</span><span class="token string">&quot;kind&quot;</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token punctuation">(</span>event<span class="token operator">:</span> <span class="token constant">E</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">SquareEvent</span> <span class="token operator">=</span> <span class="token punctuation">{</span> kind<span class="token operator">:</span> <span class="token string">&quot;square&quot;</span><span class="token punctuation">,</span> x<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> y<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> <span class="token class-name">CircleEvent</span> <span class="token operator">=</span> <span class="token punctuation">{</span> kind<span class="token operator">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span> radius<span class="token operator">:</span> <span class="token builtin">number</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">Config</span> <span class="token operator">=</span> EventConfig<span class="token operator">&lt;</span>SquareEvent <span class="token operator">|</span> CircleEvent<span class="token operator">&gt;</span>
+<span class="token comment">// type Config = {</span>
+<span class="token comment">//    square: (event: SquareEvent) =&gt; void;</span>
+<span class="token comment">//    circle: (event: CircleEvent) =&gt; void;</span>
+<span class="token comment">// }</span>
+</code></pre></div><h2 id="深入探索-further-exploration"><a href="#深入探索-further-exploration" class="header-anchor">#</a> 深入探索（Further Exploration）</h2> <p>映射类型也可以跟其他的功能搭配使用，举个例子，这是一个使用条件类型的映射类型，会根据对象是否有 <code>pii</code> 属性返回 <code>true</code> 或者 <code>false</code> :</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">ExtractPII<span class="token operator">&lt;</span>Type<span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>Property <span class="token keyword">in</span> <span class="token keyword">keyof</span> Type<span class="token punctuation">]</span><span class="token operator">:</span> Type<span class="token punctuation">[</span>Property<span class="token punctuation">]</span> <span class="token keyword">extends</span> <span class="token punctuation">{</span> pii<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">DBFields</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token punctuation">{</span> format<span class="token operator">:</span> <span class="token string">&quot;incrementing&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  name<span class="token operator">:</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span> pii<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">type</span> <span class="token class-name">ObjectsNeedingGDPRDeletion</span> <span class="token operator">=</span> ExtractPII<span class="token operator">&lt;</span>DBFields<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<span class="token comment">// type ObjectsNeedingGDPRDeletion = {</span>
+<span class="token comment">//    id: false;</span>
+<span class="token comment">//    name: true;</span>
+<span class="token comment">// }</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/21/2021, 2:18:23 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blogs/blogs/TypeScript/basic/ConditionalTypes.html" class="prev">
+            条件类型
+          </a></span> <span class="next"><a href="/blogs/blogs/TypeScript/basic/TemplateLiteralTypes.html">
+            模板字符串变量
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-2" data-v-70334359><a href="/blogs/blogs/TypeScript/basic/MappedTypes.html#映射类型-mapped-types" class="sidebar-link reco-side-映射类型-mapped-types" data-v-70334359>映射类型（Mapped Types）</a></li><li class="level-2" data-v-70334359><a href="/blogs/blogs/TypeScript/basic/MappedTypes.html#映射修饰符-mapping-modifiers" class="sidebar-link reco-side-映射修饰符-mapping-modifiers" data-v-70334359>映射修饰符（Mapping Modifiers）</a></li><li class="level-2" data-v-70334359><a href="/blogs/blogs/TypeScript/basic/MappedTypes.html#通过-as-实现键名重新映射-key-remapping-via-as" class="sidebar-link reco-side-通过-as-实现键名重新映射-key-remapping-via-as" data-v-70334359>通过 as 实现键名重新映射（Key Remapping via as）</a></li><li class="level-2" data-v-70334359><a href="/blogs/blogs/TypeScript/basic/MappedTypes.html#深入探索-further-exploration" class="sidebar-link reco-side-深入探索-further-exploration" data-v-70334359>深入探索（Further Exploration）</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/blogs/assets/js/app.f2c2bc0c.js" defer></script><script src="/blogs/assets/js/3.7a232b2a.js" defer></script><script src="/blogs/assets/js/1.4361ab0f.js" defer></script><script src="/blogs/assets/js/29.1749ef5a.js" defer></script>
+  </body>
+</html>
